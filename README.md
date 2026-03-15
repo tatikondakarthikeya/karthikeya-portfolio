@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Engineer Portfolio
 
-## Getting Started
+A premium, modern, and high-performance portfolio website built for an AI/ML Engineer and Researcher. Designed with the aesthetic of high-end tech company websites, featuring smooth cinematic animations, particle backgrounds, and a highly responsive design.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Modern Tech Stack**: Next.js 14, React, Tailwind CSS
+- **Smooth Animations**: Framer Motion & Lenis Scroll wrapper
+- **3D Elements**: Interactive Three.js particle canvas background
+- **Premium UI**: Dark mode default, Glassmorphism cards, Neon blue accents
+- **Custom Components**: Magnetic hover buttons, Animated custom cursor, Scroll-triggered reveals
+- **SEO Optimized**: Built for fast page loads and maximum crawler visibility
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- `src/components/layout`: Core layout wrappers (Navbar, Footer, Lenis smooth scroll provider)
+- `src/components/ui`: Reusable design system components (Glass cards, Magnetic buttons, etc.)
+- `src/components/sections`: Page sections (Hero, About, Skills, Projects, Research, Achievements, etc.)
+- `src/app`: Next.js App Router files and global styles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Local Setup Instructions
 
-## Learn More
+1. **Prerequisites**
+   Ensure you have Node.js (v18 or higher) and npm installed.
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install Dependencies**
+   Run the following command to install all necessary packages. We specifically lock Three Fiber to version 8 to maintain compatibility with Next.js 14 and React 18.
+   ```bash
+   npm install
+   npm install @react-three/fiber@8 @react-three/drei@9
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Start Development Server**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the portfolio.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Build for Production**
+   ```bash
+   npm run build
+   npm start
+   ```
 
-## Deploy on Vercel
+## Vercel Deployment Configuration
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project is fully ready to be deployed on Vercel.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Create a GitHub repository and push this source code to it.
+2. Log into [Vercel](https://vercel.com/) and click "Add New Project".
+3. Import your GitHub repository.
+4. **Framework Preset**: Vercel will automatically detect **Next.js**.
+5. **Build Command**: `npm run build`
+6. **Install Command**: `npm install --legacy-peer-deps` (Important: Add this override to the Install Command settings to prevent `@react-three/fiber` peer dependency issues during Vercel's build).
+7. Click **Deploy**. Vercel will build and host your portfolio automatically, giving it a global edge network CDN.
+
+## Customization
+- **Colors & Fonts**: Modify `tailwind.config.ts` and `globals.css` to update the background, accent colors, and global fonts.
+- **Content**: Update the constant lists (e.g., `SKILLS_DATA`, `PROJECTS`, `ONGOING_RESEARCH`) located at the top of each section component in `src/components/sections/`.
