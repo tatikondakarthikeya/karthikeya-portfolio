@@ -2,7 +2,7 @@
 
 import SectionReveal from "@/components/ui/SectionReveal";
 import GlassCard from "@/components/ui/GlassCard";
-import { Github, Activity, Car, ActivitySquare, FileText, Waves, Wallet, ScanEye } from "lucide-react";
+import { Github, Activity, Car, ActivitySquare, FileText, Wallet } from "lucide-react";
 
 const PROJECTS = [
   {
