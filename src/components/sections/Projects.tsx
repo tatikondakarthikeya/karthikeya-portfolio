@@ -2,7 +2,7 @@
 
 import SectionReveal from "@/components/ui/SectionReveal";
 import GlassCard from "@/components/ui/GlassCard";
-import { Github, Activity, Car, ActivitySquare, FileText } from "lucide-react";
+import { Github, Activity, Car, ActivitySquare, FileText, Waves, Wallet, ScanEye } from "lucide-react";
 
 const PROJECTS = [
   {
@@ -13,13 +13,23 @@ const PROJECTS = [
     github: "https://github.com/tatikondakarthikeya/fusionx-ai-analytics-studio",
     delay: 0.1,
   },
+  
+  {
+    title: "AI Financial Copilot",
+    description: "A completed financial management application designed to consolidate transaction data from multiple sources and support financial analysis through a web interface and API-backed data workflows.",
+    tags: ["Python", "FastAPI", "Next.js", "SQLite", "PostgreSQL"],
+    icon: <Wallet size={32} className="text-emerald-400" />,
+    github: "https://github.com/tatikondakarthikeya/ai-financial-copilot",
+    delay: 0.25,
+  },
+  
   {
     title: "Automated Real-Time Vehicle Parking System",
     description: "IoT-based smart parking system built using Raspberry Pi Pico, ESP8266, IR sensors, and RFID modules. The system monitors parking slot availability in real time and enables automated slot detection and management.",
     tags: ["IoT", "Raspberry Pi Pico", "ESP8266", "C++", "Sensors", "Arduino"],
     icon: <Car size={32} className="text-purple-400" />,
     report: "/work/vehicle-parking-system.pdf",
-    delay: 0.2,
+    delay: 0.35,
   },
   {
     title: "Arduino Earthquake Detector with Seismograph",
@@ -27,7 +37,7 @@ const PROJECTS = [
     tags: ["Arduino", "Hardware", "Sensors", "Data Visualization"],
     icon: <ActivitySquare size={32} className="text-teal-400" />,
     report: "/work/arduino-earthquake-detector.pdf",
-    delay: 0.3,
+    delay: 0.4,
   },
 ];
 

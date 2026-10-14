@@ -26,15 +26,13 @@ export default function About() {
             </h3>
             <div className="space-y-6 text-foreground/80 text-lg leading-relaxed font-light">
               <p>
-                I am a B.Tech Computer Science student at VIT Amaravati deeply focused on Artificial Intelligence, IoT systems, and automation. 
-                My passion lies at the intersection of hardware and advanced machine learning modeling.
+                I am a Computer Science and Engineering graduate from VIT-AP University, focused on Artificial Intelligence, IoT systems, and automation. My interests lie at the intersection of software engineering, hardware systems, and machine learning.
               </p>
               <p>
-                From building space debris trajectory prediction models to developing real-time earthquake detection seismographs using microcontrollers, 
-                I thrive in environments where software models directly impact and interact with the physical world.
+                My projects include space-debris trajectory prediction and embedded systems for real-time earthquake detection. I have worked on machine learning pipelines, embedded systems integration, and applied research to address practical engineering challenges.
               </p>
               <p>
-                I am experienced in engineering high-throughput machine learning pipelines, embedded systems integration, and applied research solutions aimed at solving tangible real-world problems.
+                My work combines software development, machine learning, and hardware integration to solve practical engineering problems.
               </p>
             </div>
             

@@ -1,6 +1,7 @@
 import Navbar from "@/components/layout/Navbar";
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
+import Education from "@/components/sections/Education";
 import Skills from "@/components/sections/Skills";
 import Projects from "@/components/sections/Projects";
 import Research from "@/components/sections/Research";
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <div className="relative z-10 bg-background flex flex-col items-center">
         <About />
+        <Education />
         <Skills />
         <Projects />
         <Research />
