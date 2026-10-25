@@ -2,7 +2,7 @@
 
 import SectionReveal from "@/components/ui/SectionReveal";
 import GlassCard from "@/components/ui/GlassCard";
-import { Github, Activity, Car, ActivitySquare, FileText, Wallet } from "lucide-react";
+import { Github, Activity, Car, ActivitySquare, FileText, Waves, Wallet, ScanEye } from "lucide-react";
 
 const PROJECTS = [
   {
@@ -13,7 +13,15 @@ const PROJECTS = [
     github: "https://github.com/tatikondakarthikeya/fusionx-ai-analytics-studio",
     delay: 0.1,
   },
-  
+  {
+    title: "Marine Waste & Toxic Particle Detection",
+    description: "A hybrid computer-vision framework for detecting marine waste and classifying waste types, with toxicity assessment and priority-based remediation support.",
+    tags: ["RT-DETR", "EfficientNet", "PyTorch", "Computer Vision", "Toxicity Assessment"],
+    icon: <Waves size={32} className="text-cyan-400" />,
+    github: "https://github.com/tatikondakarthikeya/ocean-waste-detection-ai",
+    report: "/work/AI_Driven_Real_Time_Toxic_Waste_Particle_Detection_System.pdf",
+    delay: 0.2,
+  },
   {
     title: "AI Financial Copilot",
     description: "A completed financial management application designed to consolidate transaction data from multiple sources and support financial analysis through a web interface and API-backed data workflows.",
@@ -22,7 +30,14 @@ const PROJECTS = [
     github: "https://github.com/tatikondakarthikeya/ai-financial-copilot",
     delay: 0.25,
   },
-  
+  {
+    title: "Driver Distraction Detection",
+    description: "A custom convolutional neural network with parallel convolutional branches for classifying ten driver behaviors, evaluated against established CNN architectures.",
+    tags: ["Python", "CNN", "Computer Vision", "Image Classification", "Model Evaluation"],
+    icon: <ScanEye size={32} className="text-amber-400" />,
+    report: "/work/Driver_Distraction_Detection__Design__Benchmarking__and_Assessment_of_a_Custom_Convolutional_Neural_Network_Architecture.pdf",
+    delay: 0.3,
+  },
   {
     title: "Automated Real-Time Vehicle Parking System",
     description: "IoT-based smart parking system built using Raspberry Pi Pico, ESP8266, IR sensors, and RFID modules. The system monitors parking slot availability in real time and enables automated slot detection and management.",
